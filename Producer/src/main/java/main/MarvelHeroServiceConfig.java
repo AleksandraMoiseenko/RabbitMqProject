@@ -11,7 +11,7 @@ import service.MarvelHeroService;
 public class MarvelHeroServiceConfig {
 
     @Bean
-    Queue personQueue() {
+    Queue marvelQueue() {
         return new Queue(MarvelHeroService.class.getSimpleName());
     }
 
